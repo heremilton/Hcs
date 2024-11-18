@@ -45,34 +45,63 @@ nav.menu ul li a {
     color: #333;
     font-weight: 700;
 }
+@media (max-width: 480px) {
+    nav.menu ul {
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    nav.menu ul li a {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
 
 /* Cartão principal */
-.super-card {
+/* Estilos para o cartão */
+.card {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 40px 0;
-    padding: 20px;
+    margin: 20px 0;
+    padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.super-card-img {
+.card-img {
     flex: 1 1 300px;
     text-align: center;
 }
 
-.super-card-img img {
+.card-img img {
     max-width: 100%;
-    border-radius: 50%;
-    margin-bottom: 15px;
+    border-radius: 8px;
 }
 
-.super-card-text {
+.card-body {
     flex: 2 1 500px;
     padding: 20px;
 }
+
+.card-button a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-button a:hover {
+    background-color: #0056b3;
+}
+
 
 /* Responsividade para dispositivos menores */
 @media (max-width: 768px) {
@@ -99,6 +128,37 @@ nav.menu ul li a {
         padding: 10px;
     }
 }
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-button a {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 10px;
+    }
+
+    .card-body {
+        font-size: 14px;
+    }
+
+    .card-button a {
+        font-size: 14px;
+    }
+}
+
 
 /* Responsividade para dispositivos muito pequenos */
 @media (max-width: 480px) {
