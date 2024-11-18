@@ -1,9 +1,66 @@
+/* reset.css */
+
+/* Remove padding, margin e borda padrão */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-ul {
-    list-style-type: none;
+/* Remove estilos padrão de lista */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove estilos padrão de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Definir tipografia base */
+html {
+    font-size: 100%; /* 16px */
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Remover bordas de imagens e garantir exibição proporcional */
+img {
+    border: 0;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reset básico para tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Ajustar exibição de blocos e elementos inline-block */
+article, aside, footer, header, nav, section {
+    display: block;
+}
+
+button, input, textarea {
+    font: inherit; /* Herda fonte do elemento pai */
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* Ajuste para altura de campos de formulário */
+textarea {
+    resize: none;
+}
+
+/* Remover estilo padrão de citações */
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
 }
