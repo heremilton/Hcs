@@ -45,21 +45,8 @@ nav.menu ul li a {
     color: #333;
     font-weight: 700;
 }
-@media (max-width: 480px) {
-    nav.menu ul {
-        padding: 0;
-        margin: 10px 0;
-    }
-
-    nav.menu ul li a {
-        font-size: 14px;
-        padding: 5px;
-    }
-}
-
 
 /* Cartão principal */
-/* Estilos para o cartão */
 .card {
     display: flex;
     flex-wrap: wrap;
@@ -73,7 +60,7 @@ nav.menu ul li a {
 }
 
 .card-img {
-    flex: 1 1 300px;
+    flex: 1 1 auto;
     text-align: center;
 }
 
@@ -102,8 +89,7 @@ nav.menu ul li a {
     background-color: #0056b3;
 }
 
-
-/* Responsividade para dispositivos menores */
+/* Responsividade */
 @media (max-width: 768px) {
     header {
         flex-wrap: wrap;
@@ -119,17 +105,6 @@ nav.menu ul li a {
         margin: 10px 0;
     }
 
-    .super-card {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .super-card-text {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 768px) {
     .card {
         flex-direction: column;
         text-align: center;
@@ -146,6 +121,10 @@ nav.menu ul li a {
 }
 
 @media (max-width: 480px) {
+    header .branch img {
+        max-width: 120px;
+    }
+
     .card {
         padding: 10px;
     }
@@ -156,21 +135,8 @@ nav.menu ul li a {
 
     .card-button a {
         font-size: 14px;
+        padding: 8px;
+        width: 100%;
     }
 }
 
-
-/* Responsividade para dispositivos muito pequenos */
-@media (max-width: 480px) {
-    header .branch img {
-        max-width: 120px;
-    }
-
-    .super-card {
-        padding: 10px;
-    }
-
-    .super-card-text {
-        font-size: 14px;
-    }
-}
